@@ -1,0 +1,16 @@
+.SectionCard{
+    width: 18rem;
+    height: auto;
+    background-color: #333;
+    border: 1px solid #333;
+    opacity: 0.9;
+    color: white;
+    box-shadow: 0 0 3px white;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.SectionCard:hover{
+    cursor: pointer;
+}

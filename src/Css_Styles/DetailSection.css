@@ -1,0 +1,178 @@
+.DetailSectionContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    
+}
+.sec-1{
+    flex: 0.085;
+    box-sizing: border-box;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    height: 420px;
+    overflow-y: scroll;
+}
+.sec-1::-webkit-scrollbar{
+    width: 0px;
+}
+
+.sec-1 .image-sec{
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 70px;
+    transition: transform 0.3s ease-in;
+}
+
+.image-sec:hover{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+.image-sec .f-1:hover{
+    border: 1px solid rgb(179, 74, 74);
+}
+
+.sec-2,.sec-3{
+    flex: 0.5;
+}
+
+.sec-2{
+    height: 420px;
+}
+
+.sec-3{
+    text-align: left;
+    max-height: 420px;
+    box-sizing: border-box;
+    overflow: scroll;
+    opacity: 0.9;
+    padding: 10px;
+
+}
+
+.sec-3::-webkit-scrollbar{
+    width: 0px;
+}
+
+.sec-3Div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;   
+}
+
+.jumbotron_1{
+   border: 1px solid #333;
+   display: inline-block;
+   width: 70%;
+   padding: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   background-color: #333;
+   font-family: sans-serif;
+}
+
+.custom-modal .modal-content {
+    background-color: #333; /* or any other dark color */
+    color: #fff; /* set text color to white or any contrasting color */
+    opacity: 0.9;
+    font-weight: bold;
+}
+.custom-modal .modalFont{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.modelContent1{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.modelContent2{
+    /* border: 1px solid red; */
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.modelImage{
+    height: 100px;
+    width: 130px;
+    margin-left: 10px;
+    border-radius: 10px;   
+}
+.modelAbout{
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 5px;
+    text-align: left;
+    margin-left: 5px;
+}
+.modelContent2{
+    /* border: 1px solid red; */
+    height: 300px;
+    overflow: scroll;
+    font-family: sans-serif;
+}
+.modelContent2::-webkit-scrollbar{
+    width: 0px;
+}
+.modelContent2 > div{
+    margin-bottom: 10px;
+}
+
+.cardSwiper {
+    max-height: 450px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Keep items on a single line */
+    box-sizing: border-box;
+}
+
+.cardSwiper::-webkit-scrollbar{
+    width: 0px;
+}
+
+@media screen and (max-width:800px) {
+    .DetailSectionContainer{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .sec-1{
+        flex-direction: row;
+        column-gap: 12px;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .f-1{
+        height: 70px;
+        width: 80px;
+    }
+    .sec-2{
+        padding: 5px;
+    }
+    .jumbotron_1{
+        width: 100%;
+        font-size: 15px;
+    }
+    .sec-model,.f-custom{
+        font-size: 12px;
+    }
+    .menu-x{
+        font-size: 15px;
+    }
+    .sec-1 .image-sec{
+        height: 70px;
+    }
+    
+}

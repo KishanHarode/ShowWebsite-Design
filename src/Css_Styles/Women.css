@@ -1,0 +1,40 @@
+.womenCardContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 5px;
+    
+}
+.womensContainer{
+    height: auto;
+    margin-top: 55px;
+}
+.womensCardContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 55px;
+    padding: 10px;
+    max-height: 490px;
+    overflow: scroll;  
+}
+.womensCardContainer::-webkit-scrollbar{
+    width: 0px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .womenCardContainer{
+        flex-direction: column;
+        column-gap: 10px;
+    }
+    .womensCardContainer{
+        flex-direction: column;
+        column-gap: 40px;
+    }
+    .womensContainer{
+        height: 880px;
+    }
+}

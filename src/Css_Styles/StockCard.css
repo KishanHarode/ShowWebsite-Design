@@ -1,0 +1,32 @@
+.StockCard{
+    width: 18rem;
+    background-color: #333;
+    border: 1px solid #333;
+    opacity: 0.9;
+    color: white;
+    box-shadow: 0 0 3px white;
+    transition: transform 0.3s ease-in;   
+}
+
+.StockCard:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 5px white;
+    opacity: 1;
+    cursor: pointer;
+}
+.card-title-custom{
+    display: block;
+    text-align: start;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.card-text-custom{
+    display: block;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+.text-start-container{
+    text-align: left;
+    margin-left: -16px;
+    
+}

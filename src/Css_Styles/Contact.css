@@ -1,0 +1,91 @@
+.custom-contact-font{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.ContactContainer{
+    margin-top: 55px;
+    height: auto;
+    /* border: 1px solid red; */
+}
+.customText{
+    margin: 0px auto;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    word-spacing: 7px;
+    font-weight: normal;
+}
+.contactContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.contactContent > div {
+    flex: 1;
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding */
+    margin-right: 10px; /* Space between items */
+    background-color: #333;
+    opacity: 0.9;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in;
+}
+ 
+.contactContent > div:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+.icon-text{
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.contactContent > div:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .formContainer > div {
+    flex: 1;
+    /* border: 1px solid red; Just for visualization */
+  }
+  
+  
+
+
+
+
+@media screen and (max-width:700px) {
+    .customText{
+        font-size: 10px;
+        padding-top: 3px;
+        word-spacing: 5px;
+    }
+    .custom-contact-font{
+        font-size: 20px;
+    }
+    .contactContent{
+        flex-direction: column;
+        row-gap:10px;
+    }
+    .contactContent > div{
+        margin-right: 0px;
+    }
+    .formContainer{
+        flex-direction: column;
+    }
+
+}
